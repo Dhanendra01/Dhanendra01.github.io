@@ -67,10 +67,13 @@ header {
 </header>
 <body>
 <script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/d3-selection-multi.v1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script src="https://d3-ring-note.js"></script>
 <script>
 
 
-var margin = {top: 20, right: 60, bottom: 50, left: 100},
+var margin = {top: 20, right: 20, bottom: 50, left: 100},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -166,13 +169,13 @@ d3.csv("Data4.csv", function(error, data) {
       .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
 
   legend.append("rect")
-      .attr("x", width + 40)
+      .attr("x", width - 18)
       .attr("width", 18)
       .attr("height", 18)
       .style("fill", color);
 
   legend.append("text")
-      .attr("x", width + 40)
+      .attr("x", width - 24)
       .attr("y", 9)
       .attr("dy", ".35em")
       .style("text-anchor", "end")
@@ -201,13 +204,14 @@ I wanted to show the Happiness score of all the countries in the world without m
 <!pagination example code from https://www.w3schools.com/howto/howto_css_pagination.asp>
 <footer>
 <div class="pagination">
-  <a href="https://dhanendra01.github.io/Overview.html">&laquo;</a>
-  <a  href="https://dhanendra01.github.io/MainPage.html">1</a>
-  <a href="https://dhanendra01.github.io/Overview.html">2</a>
+  <a href="https://github.com/Dhanendra01/Final-Project/blob/master/Overview.html">&laquo;</a>
+  <a  href="https://github.com/Dhanendra01/Final-Project/blob/master/MainPage.html">1</a>
+  <a href="https://github.com/Dhanendra01/Final-Project/blob/master/Overview.html">2</a>
   <a class="active" href="#">3</a>
-  <a href="https://dhanendra01.github.io/Barchart.html">4</a>
-  <a href="https://dhanendra01.github.io/Barchart.html">&raquo;</a>
+  <a href="https://github.com/Dhanendra01/Final-Project/blob/master/Grouped%20Barchart.html">4</a>
+  <a href="https://github.com/Dhanendra01/Final-Project/blob/master/Grouped%20Barchart.html">&raquo;</a>
 </div>
 </footer>
 </body>
+</head>
 </html>
